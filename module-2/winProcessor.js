@@ -8,12 +8,12 @@ const parseProcessInfo = (output) => {
 	}
 }
 
-const getCommand =
+const command =
 	'powershell "$process = Get-Process | Sort-Object CPU -Descending | Select-Object -First 1; ' +
 	'$cpuUsage = [Math]::Min(($process.CPU / ([Environment]::ProcessorCount * 100)), 100); ' +
 	"$process.ProcessName + ' ' + $cpuUsage + '% ' + $process.WorkingSet\""
 
 module.exports = {
 	parseProcessInfo,
-	getCommand,
+	command,
 }

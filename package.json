@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"random": "nodemon --delay 5 --inspect index.js",
-		"start": "nodemon --delay 5 --inspect activityMonitor.js"
+		"random": "nodemon --delay 5 --inspect ./module-1/index.js",
+		"start": "nodemon --delay 5 --inspect ./module-2/activityMonitor.js"
 	},
 	"keywords": [],
 	"author": "",

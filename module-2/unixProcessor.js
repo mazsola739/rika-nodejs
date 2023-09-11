@@ -8,9 +8,9 @@ const parseProcessInfo = (output) => {
 	}
 }
 
-const getCommand = 'ps -A -o %cpu,%mem,comm | sort -nr | head -n 1'
+const command = 'ps -A -o %cpu,%mem,comm | sort -nr | head -n 1'
 
 module.exports = {
 	parseProcessInfo,
-	getCommand,
+	command,
 }

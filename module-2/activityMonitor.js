@@ -5,13 +5,14 @@ const currentPlatform = operatingSystem.platform()
 
 const winProcessor = require('./winProcessor')
 const unixProcessor = require('./unixProcessor')
+const config = require('./config')
 
 const isCurrentPlatformWindows = currentPlatform === 'win32'
 
 const getProcessInfoViaPowerShell = () => {
 	const command = isCurrentPlatformWindows
-		? winProcessor.getCommand
-		: unixProcessor.getCommand
+		? winProcessor.command
+		: unixProcessor.command
 
 	return execSync(command).toString()
 }
@@ -36,16 +37,15 @@ const displayProcessInfo = () => {
 
 const logProcessInfoToFile = () => {
 	const processInfo = getProcessInfo()
-	const currentTimestamp = Math.floor(Date.now() / 1000)
+	const timestamp = new Date().toISOString()
+	const logMessage = `${timestamp}: ${processInfo}\n`
 
-	const logEntryWithTimestamp = `${currentTimestamp} : ${processInfo}\n`
-
-	fileSystem.appendFile('activityMonitor.log', logEntryWithTimestamp, (err) => {
+	fileSystem.appendFile('activityMonitor.log', logMessage, (err) => {
 		if (err) {
 			console.error('Oh no! ', err)
 		}
 	})
 }
 
-setInterval(displayProcessInfo, 100)
-setInterval(logProcessInfoToFile, 60000)
+setInterval(displayProcessInfo, config.DISPLAY_INTERVAL)
+setInterval(logProcessInfoToFile, config.LOG_INTERVAL)

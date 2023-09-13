@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a CPU monitor that displays the most CPU-intensive process and logs it to a file every second.
+This project is NodeJs Global Mentoring practice project
 
 ## Installation
 
@@ -18,17 +18,35 @@ npm install
 
 ## Usage
 
-The 'npm run random' command generates a random number between two specified numbers. The '.random' command inside the REPL also generates a random number between two specified numbers. The '.help' command inside the REPL displays a list of available commands. The 'npm run start' command starts the CPU monitor.
-
+- Module 1: The 'npm run random' command generates a random number between two specified numbers. The '.random' command inside the REPL also generates a random number between two specified numbers. The '.help' command inside the REPL displays a list of available commands. 
 ```
 npm run random
 
 //inside REPL
 .random num1 num2
 .help
-
+```
+- Module 2: The 'npm run start' command starts the CPU monitor.
+```
 npm run start
+```
+- Module 3: 
+  - The 'npm run task1' command starts the event emitter.
+  
+  ```
+npm run task1
 
+```
+  - The 'npm run task2' command starts the event emitter extended with elapsed time measurement.
+
+  ```
+npm run task2
+
+```
+  - the 'npm run task3' command starts the CSV to json converter
+
+```
+npm run task3
 ```
 
 ## Dev notes

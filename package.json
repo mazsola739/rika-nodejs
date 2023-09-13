@@ -1,17 +1,23 @@
 {
 	"name": "nodejs-global-mentoring-program",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"random": "nodemon --delay 5 --inspect ./module-1/index.js",
-		"start": "nodemon --delay 5 --inspect ./module-2/activityMonitor.js"
+		"start": "nodemon --delay 5 --inspect ./module-2/activityMonitor.js",
+		"task1": "nodemon --delay 5 --inspect ./module-3/eventEmitterTest.js",
+		"task2": "nodemon --delay 5 --inspect ./module-3/withTimeTest.js",
+		"task3": "nodemon --delay 5 --inspect ./module-3/csvToJson.js"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"nodemon": "^3.0.1"
+	},
+	"dependencies": {
+		"csvtojson": "^2.0.10"
 	}
 }

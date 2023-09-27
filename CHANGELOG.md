@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.3.0] - 2023-09-20
+
+### Added
+
+- Implemented unit, integration and E2E tests for public holiday service
+
+### Fixed
+
+- None.
+
+### Changed
+
+- None.
+
+### Removed
+
+- None.
 ## [1.2.0] - 2023-09-13
 
 ### Added

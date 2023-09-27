@@ -19,6 +19,7 @@ npm install
 ## Usage
 
 - Module 1: The 'npm run random' command generates a random number between two specified numbers. The '.random' command inside the REPL also generates a random number between two specified numbers. The '.help' command inside the REPL displays a list of available commands. 
+
 ```
 npm run random
 
@@ -26,28 +27,37 @@ npm run random
 .random num1 num2
 .help
 ```
+
 - Module 2: The 'npm run start' command starts the CPU monitor.
+
 ```
 npm run start
 ```
+
 - Module 3: 
   - The 'npm run task1' command starts the event emitter.
   
   ```
-npm run task1
-
-```
+  npm run task1
+  ```
   - The 'npm run task2' command starts the event emitter extended with elapsed time measurement.
 
   ```
-npm run task2
-
-```
+  npm run task2
+  ```
   - the 'npm run task3' command starts the CSV to json converter
 
+  ```
+  npm run task3
+  ```
+
+- Module 4: The 'npm run test' command runs the test suite for the public holiday service, while the 'npm run test:coverage' command runs the test suite and generates a code coverage report in the console."
+
 ```
-npm run task3
+npm run test
+npm run test:coverage
 ```
+
 
 ## Dev notes
 

@@ -1,3 +1,5 @@
 node_modules
 activityMonitor.log
 csvDirectory.txt
+coverage
+.vscode

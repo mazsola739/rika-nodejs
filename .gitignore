@@ -3,3 +3,4 @@ activityMonitor.log
 csvDirectory.txt
 coverage
 .vscode
+dist

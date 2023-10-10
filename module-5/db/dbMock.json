@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "Batman",
+    "email": "b-man@email.com",
+    "hobbies": [
+      "climbing",
+      "close combat",
+      "money spending",
+      "slapping Robin"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Superman",
+    "email": "smallville@email.com",
+    "hobbies": [
+      "laser",
+      "flying",
+      "journalism",
+      "x-ray"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Thanos",
+    "email": "im_right@email.com",
+    "hobbies": [
+      "gardening",
+      "collecting stones",
+      "population control"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Deadpool",
+    "email": "i_luv_logan@email.com",
+    "hobbies": [
+      "music",
+      "dancing",
+      "drawing"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Diana",
+    "email": "wonder_woman@email.com",
+    "hobbies": [
+      "archeology",
+      "sport",
+      "dancing"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Spiderman",
+    "email": "spidey@email.com",
+    "hobbies": [
+      "pankration",
+      "science",
+      "photography"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Hulk",
+    "email": "big_boy@email.com",
+    "hobbies": [
+      "smash",
+      "science",
+      "fashion",
+      "reading"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "She-Hulk",
+    "email": "big_booty@email.com",
+    "hobbies": [
+      "fashion",
+      "tinder"
+    ]
+  }
+]

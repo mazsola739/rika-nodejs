@@ -5,7 +5,7 @@ import dbMock from '../db/dbMock.json'
 
 let users = dbMock
 
-const dbFilePath = path.resolve(process.cwd(), 'module-5/db/dbMock.json')
+const dbFilePath = path.resolve(process.cwd(), 'db/dbMock.json')
 
 const writeDataToDbMock = (data) => {
 	return fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2))

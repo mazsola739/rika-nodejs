@@ -4,6 +4,42 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.5.0] - 2023-10-11
+
+### Added
+
+- Implemented express checkout service application which sells different types of products
+
+### Fixed
+
+- None.
+
+### Changed
+
+- Redesigned module-5 using ts-node.
+
+### Removed
+
+- None.
+
+## [1.4.0] - 2023-10-04
+
+### Added
+
+- Implemented server with REST API for users and their hobbies
+
+### Fixed
+
+- None.
+
+### Changed
+
+- None.
+
+### Removed
+
+- None.
+
 ## [1.3.0] - 2023-09-20
 
 ### Added
@@ -21,6 +57,7 @@ All notable changes to this project will be documented in this file.
 ### Removed
 
 - None.
+
 ## [1.2.0] - 2023-09-13
 
 ### Added

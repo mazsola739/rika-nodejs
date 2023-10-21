@@ -1,13 +1,13 @@
 {
 	"name": "module-5",
 	"version": "1.0.0",
-	"description": "",
+	"description": "NodeJS Global Mentoring Program [2023 Q3-Q4 EU] - Module-5",
 	"main": "index.js",
 	"scripts": {
 		"prod": "npx tsc && node dist/server.js",
 		"dev": "nodemon --inspect server.ts"
 	},
-	"author": "",
+	"author": "Rika",
 	"license": "ISC",
 	"devDependencies": {
 		"@types/node": "^20.8.3",

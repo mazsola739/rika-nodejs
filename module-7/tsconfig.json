@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": false,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"target": "ESNext",
+		"outDir": "dist",
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+	"lib": ["ESNext"],
+	"ts-node": {
+		"esm": true,
+		"transpileOnly": true
+	}
+}

@@ -1,0 +1,26 @@
+[
+	{
+		"id": "7bafd526-4155-4d78-9895-75cc92ad0c36",
+		"title": "Electric Gun Wine Opener",
+		"description": "It allows you to pop wine bottles open with the simple push of a button.",
+		"price": 19.99
+	},
+	{
+		"id": "2c054cc1-7e53-4764-a378-c642b4de48da",
+		"title": "Tequila Flavored Lollipop",
+		"description": "A yummy candy version of Mezcal with a worm in the bottom of the bottle! ",
+		"price": 39.99
+	},
+	{
+		"id": "fae70882-0f1f-44d4-b238-6e29d065b148",
+		"title": "Coffin Skeleton Candle",
+		"description": "If you're looking for something a little scarier, this Coffin Skeleton Candle is an excellent candle for you!",
+		"price": 9.99
+	},
+	{
+		"id": "a800bfcf-6ea3-44f9-b8fc-188a94dc9678",
+		"title": "Severed Bloody Hand",
+		"description": "The good old times when children wore innocent costumes on Halloween are long gone",
+		"price": 99.99
+	}
+]

@@ -10,9 +10,10 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"target": "es6",
+		"target": "ESNext",
 		"outDir": "./dist",
 		"sourceMap": true
 	},
-	"include": ["module-*/**/*"]
+	"include": ["module-*/**/*"],
+	"lib": ["ESNext"]
 }

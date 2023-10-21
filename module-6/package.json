@@ -1,0 +1,25 @@
+{
+	"name": "module-6",
+	"version": "1.0.0",
+	"description": "NodeJS Global Mentoring Program [2023 Q3-Q4 EU] - Module-6",
+	"main": "index.js",
+	"scripts": {
+		"prod": "npx tsc && node dist/app.js",
+		"dev": "nodemon --inspect app.ts"
+	},
+	"author": "Rika",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/express": "^4.17.18",
+		"@types/node": "^20.8.3",
+		"nodemon": "^3.0.1",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"express": "^4.18.2",
+		"joi": "^17.11.0"
+	}
+}

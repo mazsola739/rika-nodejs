@@ -58,7 +58,17 @@ npm run test
 npm run test:coverage
 ```
 
+- Module 5: The 'npm run server' command runs REST API server for users and their hobbies"
 
+```
+npm run server
+```
+
+- Module 6: The 'npm run express' command runs checkout service for users which sells different types of products"
+
+```
+npm run express
+```
 ## Dev notes
 
 To use the debugger, 'nodemon --inspect' turned on debugging for the back-end code. Then, open the Chrome DevTools and navigate to the ['chrome://inspect/#devices'](chrome://inspect/#devices) URL to start debugging.

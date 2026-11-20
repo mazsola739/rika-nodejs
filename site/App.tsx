@@ -21,7 +21,7 @@ import { UsersConsole } from './demos/UsersConsole.tsx'
 import { WithTimeDemo } from './demos/WithTimeDemo.tsx'
 import { moduleHref, overviewHref, type Route, routeKey, useRoute } from './route.ts'
 
-const SITE_TITLE = 'Node.js home tasks – Rika'
+const SITE_TITLE = 'Node.js Mentoring – Rika'
 
 const DEMOS: Record<number, ReactNode> = {
   1: <ReplDemo />,
@@ -113,15 +113,12 @@ const Tab = ({
 
 const Intro = () => (
   <div className="pt-12 pb-8 sm:pt-16">
-    <p className="font-mono text-sm text-accent">
-      EPAM Node.js Global Mentoring Program · autumn 2023
-    </p>
     <h1
       id="overview-title"
       tabIndex={-1}
-      className="mt-2 max-w-3xl text-4xl font-bold tracking-tight focus:outline-none sm:text-5xl"
+      className="max-w-3xl text-4xl font-bold tracking-tight focus:outline-none sm:text-5xl"
     >
-      Seven home tasks, from a REPL to a database
+      Node.js Mentoring
     </h1>
     <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted">
       My homework from a Node.js mentoring course, when I was a junior developer: every week a new

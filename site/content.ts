@@ -7,6 +7,10 @@ export const sourceUrl = (path: string) => `${REPO}/blob/main/${path}`
 export type ModuleInfo = {
   id: number
   title: string
+  /** The label of the tab. */
+  short: string
+  /** What can be tried on the page, for the card. */
+  demo: string
   topics: string[]
   summary: string
   files: string[]
@@ -17,6 +21,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 1,
     title: 'Node.js introduction',
+    short: 'Introduction',
+    demo: 'Try the REPL',
     topics: ['nvm', 'REPL', 'inspector'],
     summary:
       'Installing Node with a version manager, debugging with the inspector, and extending the REPL. My REPL got a .random command that picks a whole number between two numbers.',
@@ -26,6 +32,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 2,
     title: 'The standard library',
+    short: 'Standard library',
+    demo: 'Feed the parser your own output',
     topics: ['child_process', 'os', 'fs'],
     summary:
       'An activity monitor: it asks the operating system for the most CPU-hungry process (PowerShell on Windows, ps on macOS and Linux), refreshes one terminal line every second and writes it to a log file every minute.',
@@ -35,6 +43,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 3,
     title: 'EventEmitter, Buffer & Streams',
+    short: 'Events & streams',
+    demo: 'Three playgrounds',
     topics: ['events', 'streams', 'Buffer'],
     summary:
       'My own EventEmitter, a WithTime class that times an async call with events, and a CSV-to-JSON converter that streams the file chunk by chunk instead of reading it whole.',
@@ -49,6 +59,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 4,
     title: 'Testing',
+    short: 'Testing',
+    demo: 'Live holidays from Nager.Date',
     topics: ['unit', 'mocks', 'end-to-end'],
     summary:
       'A small service for the Nager.Date public holidays API, with unit tests, a mocked fetch, and end-to-end tests against the live API.',
@@ -58,6 +70,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 5,
     title: 'Network',
+    short: 'Network',
+    demo: 'An API console',
     topics: ['node:http', 'REST', 'HATEOAS'],
     summary:
       'A REST API for users and their hobbies on plain node:http: routing, status codes, OPTIONS and 405, a Cache-Control header for the hobbies and links between the resources – all by hand.',
@@ -67,6 +81,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 6,
     title: 'Express & layered architecture',
+    short: 'Express',
+    demo: 'An API console with auth and Joi',
     topics: ['Express 5', 'middleware', 'Joi'],
     summary:
       'A checkout service: products, one cart per user, orders. Router → middleware (the x-user-id header, Joi validation) → controller → service → store, with an OpenAPI description.',
@@ -82,6 +98,8 @@ export const modules: ModuleInfo[] = [
   {
     id: 7,
     title: 'Databases',
+    short: 'Databases',
+    demo: 'The tables and the layers',
     topics: ['SQL', 'SQLite', 'transactions'],
     summary:
       'The checkout service of module 6 with a real database: only the store is replaced, the routes, middleware and service stay the same. In 2023 this was an unfinished PostgreSQL + MikroORM draft; in 2026 I finished it with node:sqlite.',

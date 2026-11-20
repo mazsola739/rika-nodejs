@@ -62,15 +62,26 @@ export const DemoTitle = ({ children, note }: { children: ReactNode; note?: Reac
   </div>
 )
 
-/** One module: the story, the files, the commands, and the demos. */
+/**
+ * One module on its own page: the story, the files, the commands, and the demos.
+ * The heading takes the focus when the page opens, so screen readers start there.
+ */
 export const ModuleSection = ({ info, children }: { info: ModuleInfo; children: ReactNode }) => (
-  <section id={`module-${info.id}`} aria-labelledby={`module-${info.id}-title`} className="py-10">
+  <section
+    id={`module-${info.id}`}
+    aria-labelledby={`module-${info.id}-title`}
+    className="pt-8 pb-6"
+  >
     <div className="grid gap-6 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
       <div>
-        <p className="font-mono text-sm text-accent">Module {info.id}</p>
-        <h2 id={`module-${info.id}-title`} className="mt-1 text-2xl font-bold tracking-tight">
+        <p className="font-mono text-sm text-accent">Module {info.id} of 7</p>
+        <h1
+          id={`module-${info.id}-title`}
+          tabIndex={-1}
+          className="mt-1 text-3xl font-bold tracking-tight focus:outline-none"
+        >
           {info.title}
-        </h2>
+        </h1>
         <ul className="mt-2 flex flex-wrap gap-1.5" aria-label="Topics">
           {info.topics.map((topic) => (
             <li key={topic} className="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">

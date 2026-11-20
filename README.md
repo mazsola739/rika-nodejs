@@ -1,4 +1,4 @@
-# Node.js Mentoring Program
+# Node.js Mentoring
 
 Seven home tasks, from a REPL to a database: my homework from the **EPAM Node.js Global Mentoring
 Program** in autumn 2023, when I was a junior developer – renovated in 2026.

@@ -47,8 +47,18 @@ const Header = ({ route }: { route: Route }) => (
         <span className="text-accent">&gt;_</span> rika-nodejs
       </a>
       <a
+        href={PORTFOLIO}
+        target="_blank"
+        rel="noreferrer"
+        className="ml-auto text-sm text-muted hover:text-accent"
+      >
+        ← Portfolio
+      </a>
+      <a
         href={REPO}
-        className="ml-auto rounded-md border border-line px-3 py-1.5 text-sm hover:border-accent hover:text-accent"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-md border border-line px-3 py-1.5 text-sm hover:border-accent hover:text-accent"
       >
         GitHub
       </a>
@@ -123,18 +133,24 @@ const Intro = () => (
     <div className="mt-6 flex flex-wrap gap-2">
       <a
         href={REPO}
+        target="_blank"
+        rel="noreferrer"
         className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-page hover:opacity-90"
       >
         Source code
       </a>
       <a
         href={ORIGINAL_2023}
+        target="_blank"
+        rel="noreferrer"
         className="rounded-md border border-line bg-surface px-4 py-2 text-sm hover:border-accent hover:text-accent"
       >
         The code as it was in 2023
       </a>
       <a
         href={PORTFOLIO}
+        target="_blank"
+        rel="noreferrer"
         className="rounded-md border border-line bg-surface px-4 py-2 text-sm hover:border-accent hover:text-accent"
       >
         Portfolio
@@ -342,11 +358,11 @@ export const App = () => {
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-2 px-4 py-6 text-sm text-muted">
           <p>Rika · 2023, renovated in 2026</p>
           <p>
-            <a href={REPO} className="hover:text-accent">
+            <a href={REPO} target="_blank" rel="noreferrer" className="hover:text-accent">
               GitHub
             </a>{' '}
             ·{' '}
-            <a href={PORTFOLIO} className="hover:text-accent">
+            <a href={PORTFOLIO} target="_blank" rel="noreferrer" className="hover:text-accent">
               Portfolio
             </a>
           </p>

@@ -97,6 +97,8 @@ export const ModuleSection = ({ info, children }: { info: ModuleInfo; children: 
             <li key={file}>
               <a
                 href={sourceUrl(file)}
+                target="_blank"
+                rel="noreferrer"
                 className="font-mono text-xs break-all text-accent underline-offset-2 hover:underline"
               >
                 {file}

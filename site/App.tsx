@@ -50,9 +50,9 @@ const Header = ({ route }: { route: Route }) => (
         href={PORTFOLIO}
         target="_blank"
         rel="noreferrer"
-        className="ml-auto text-sm text-muted hover:text-accent"
+        className="ml-auto rounded-md border border-line px-3 py-1.5 text-sm hover:border-accent hover:text-accent"
       >
-        ← Portfolio
+        Portfolio
       </a>
       <a
         href={REPO}
@@ -355,7 +355,7 @@ export const App = () => {
             </a>{' '}
             ·{' '}
             <a href={PORTFOLIO} target="_blank" rel="noreferrer" className="hover:text-accent">
-              Portfolio
+              mazsola739
             </a>
           </p>
         </div>

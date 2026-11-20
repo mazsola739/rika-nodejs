@@ -1,6 +1,22 @@
+# dependencies
 node_modules
-activityMonitor.log
-csvDirectory.txt
-coverage
-.vscode
+
+# build output
 dist
+coverage
+*.tsbuildinfo
+
+# files the modules write when they run
+module-2/activity-monitor.log
+module-3/books.txt
+module-7/data
+
+# logs
+*.log
+
+# editor and OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.local

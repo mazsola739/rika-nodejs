@@ -1,8 +1,0 @@
-{
-	"delay": 2500,
-	"ext": "ts",
-	"ignore": ["db/*.json"],
-	"execMap": {
-		"ts": "node -r ts-node/register -r tsconfig-paths/register"
-	}
-}

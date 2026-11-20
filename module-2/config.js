@@ -1,4 +1,0 @@
-module.exports = {
-	DISPLAY_INTERVAL: 100,
-	LOG_INTERVAL: 60000,
-}

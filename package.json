@@ -1,46 +1,45 @@
 {
-	"name": "nodejs-global-mentoring-program",
-	"version": "1.5.0",
-	"description": "NodeJS Global Mentoring Program [2023 Q3-Q4 EU]",
-	"main": "index.js",
-	"scripts": {
-		"random": "nodemon --delay 5 --inspect ./module-1/index.js",
-		"start": "nodemon --delay 5 --inspect ./module-2/activityMonitor.js",
-		"task1": "nodemon --delay 5 --inspect ./module-3/eventEmitterTest.js",
-		"task2": "nodemon --delay 5 --inspect ./module-3/withTimeTest.js",
-		"task3": "nodemon --delay 5 --inspect ./module-3/csvToJson.js",
-		"test": "jest",
-		"test:coverage": "jest --coverage",
-		"server": "cd ./module-5 && npm i && npm run-script dev",
-		"express": "cd ./module-6 && npm i && npm run-script dev",
-		"databases": "cd ./module-7 && npm i && npm run-script dev"
-	},
-	"keywords": [
-		"NodeJS"
-	],
-	"author": "Rika",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/express": "^4.17.18",
-		"@types/jest": "^29.5.5",
-		"@types/node": "^20.8.3",
-		"@types/supertest": "^2.0.14",
-		"jest": "^29.7.0",
-		"nodemon": "^3.0.1",
-		"supertest": "^6.3.3",
-		"ts-jest": "^29.1.1",
-		"ts-node": "^10.9.1",
-		"typescript": "^5.2.2"
-	},
-	"dependencies": {
-		"@mikro-orm/cli": "^5.8.8",
-		"@mikro-orm/core": "^5.8.8",
-		"@mikro-orm/migrations": "^5.8.8",
-		"@mikro-orm/postgresql": "^5.8.8",
-		"axios": "^1.5.1",
-		"body-parser": "^1.20.2",
-		"csvtojson": "^2.0.10",
-		"express": "^4.18.2",
-		"joi": "^17.11.0"
-	}
+  "name": "rika-nodejs",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "My home tasks from the EPAM Node.js Global Mentoring Program (2023), renovated in 2026: a REPL, a process monitor, an EventEmitter, streams, tests, a node:http API, an Express API and SQLite",
+  "scripts": {
+    "module-1": "bun module-1/repl.ts",
+    "module-2": "bun module-2/monitor.ts",
+    "module-3:events": "bun module-3/events-demo.ts",
+    "module-3:time": "bun module-3/with-time-demo.ts",
+    "module-3:csv": "bun module-3/csv-to-json.ts",
+    "module-4": "bun module-4/cli.ts",
+    "module-5": "bun --watch module-5/server.ts",
+    "module-6": "bun --watch module-6/server.ts",
+    "module-7": "bun --watch module-7/server.ts",
+    "test": "bun test",
+    "test:e2e": "E2E=1 bun test module-4",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "lint": "biome check .",
+    "lint:ci": "biome ci .",
+    "format": "biome check --write ."
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "joi": "^18.3.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.7",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/bun": "^1.4.5",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.8"
+  }
 }

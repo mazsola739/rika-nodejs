@@ -1,0 +1,59 @@
+[
+  {
+    "id": "816e510d-26d4-4758-b3f9-fde484c287a2",
+    "userId": "1ec6b2b6-38f6-493f-ac50-405c71e883ac",
+    "isDeleted": false,
+    "items": [
+      {
+        "product": {
+          "id": "7bafd526-4155-4d78-9895-75cc92ad0c36",
+          "title": "Electric Gun Wine Opener",
+          "description": "It allows you to pop wine bottles open with the simple push of a button.",
+          "price": 19.99
+        },
+        "count": 1
+      },
+      {
+        "product": {
+          "id": "fae70882-0f1f-44d4-b238-6e29d065b148",
+          "title": "Coffin Skeleton Candle",
+          "description": "If you're looking for something a little scarier, this Coffin Skeleton Candle is an excellent candle for you!",
+          "price": 9.99
+        },
+        "count": 3
+      }
+    ]
+  },
+  {
+    "id": "2c8a5555-8698-43f4-8cd8-a553cab85479",
+    "userId": "5eced5ef-9960-4d08-9b80-ff90c6f76a1c",
+    "isDeleted": false,
+    "items": [
+      {
+        "product": {
+          "id": "a800bfcf-6ea3-44f9-b8fc-188a94dc9678",
+          "title": "Severed Bloody Hand",
+          "description": "The good old times when children wore innocent costumes on Halloween are long gone",
+          "price": 99.99
+        },
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "d1c5c1ad-1da9-42d0-9bfe-f2a9624b4561",
+    "userId": "fd258b95-848c-4ed0-82b8-ec68b32adc6b",
+    "isDeleted": false,
+    "items": [
+      {
+        "product": {
+          "id": "2c054cc1-7e53-4764-a378-c642b4de48da",
+          "title": "Tequila Flavored Lollipop",
+          "description": "A yummy candy version of Mezcal with a worm in the bottom of the bottle! ",
+          "price": 39.99
+        },
+        "count": 1
+      }
+    ]
+  }
+]

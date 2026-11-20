@@ -121,11 +121,8 @@ const Intro = () => (
       Node.js Mentoring
     </h1>
     <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted">
-      My homework from a Node.js mentoring course, when I was a junior developer: every week a new
-      part of Node, every task reviewed in a merge request. In 2026 I renovated it with strict
-      TypeScript, Bun and tests for every module. Open a task: most of the code{' '}
-      <strong className="text-ink">runs right here in your browser</strong> – the same files as in
-      the repository.
+      My Node.js homework from 2023, renovated in 2026 with strict TypeScript, Bun and tests. Open a
+      task: most of the code <strong className="text-ink">runs right here in your browser</strong>.
     </p>
     <div className="mt-6 flex flex-wrap gap-2">
       <a
@@ -143,14 +140,6 @@ const Intro = () => (
         className="rounded-md border border-line bg-surface px-4 py-2 text-sm hover:border-accent hover:text-accent"
       >
         The code as it was in 2023
-      </a>
-      <a
-        href={PORTFOLIO}
-        target="_blank"
-        rel="noreferrer"
-        className="rounded-md border border-line bg-surface px-4 py-2 text-sm hover:border-accent hover:text-accent"
-      >
-        Portfolio
       </a>
     </div>
   </div>
@@ -173,7 +162,10 @@ const ModuleCard = ({ info }: { info: ModuleInfo }) => (
     <h2 className="mt-1 text-lg leading-snug font-semibold group-hover:text-accent">
       {info.title}
     </h2>
-    <p className="mt-2 line-clamp-4 text-sm leading-relaxed text-muted">{info.summary}</p>
+    {/* On a phone the card is just the title, the topics and the demo: the module page tells the rest. */}
+    <p className="mt-2 line-clamp-4 hidden text-sm leading-relaxed text-muted sm:block">
+      {info.summary}
+    </p>
     <ul className="mt-auto flex flex-wrap gap-1.5 pt-4" aria-label="Topics">
       {info.topics.map((topic) => (
         <li key={topic} className="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">
@@ -187,11 +179,14 @@ const ModuleCard = ({ info }: { info: ModuleInfo }) => (
   </a>
 )
 
-/** The eighth card: not a task, but the way to the story of the renovation. */
+/**
+ * The eighth card: not a task, but the way to the story of the renovation. Not on a phone, where the cards are
+ * one column and the story starts right under them.
+ */
 const RenovationCard = () => (
   <a
     href="#renovation"
-    className="group flex flex-col justify-between rounded-xl border border-dashed border-line p-5 transition-colors hover:border-accent"
+    className="group hidden flex-col justify-between rounded-xl border border-dashed border-line p-5 transition-colors hover:border-accent sm:flex"
   >
     <div>
       <span className="font-mono text-sm text-accent">2023 → 2026</span>
